@@ -1,0 +1,29 @@
+<ion-header>
+ <ion-navbar color="dark">
+    <button
+      ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title *ngIf="lista"> {{lista.nombre | uppercase}}</ion-title>
+    <ion-buttons right>
+      <button ion-button  icon-only (click)="reiniciarListas()">
+        <ion-icon name="refresh"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+    <ion-list *ngIf="lista">
+      <ion-item *ngFor="let item of lista.items" text-wrap (click)="itemClick(item)">
+        <span style="float:left" [class.completo]="item.completado" >{{item.nombre | uppercase}}</span>
+        <span style="float:right" [ngClass]="{'completo': item.completado}" >{{item.estado| uppercase}}</span>
+        <p style="clear:both" text-wrap>{{item.aclaracion}}</p>
+      </ion-item>
+    </ion-list>
+  <ion-fab right bottom  *ngIf="lista && lista.completada">
+    <button ion-fab color="dark" (click)="irSiguienteLista()" >
+       <ion-icon name="arrow-dropright"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>

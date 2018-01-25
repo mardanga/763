@@ -1,0 +1,22 @@
+<ion-menu [content]="content">
+    <ion-header>    
+        <ion-toolbar color="dark"> 
+        <ion-title>
+            763 Checklist
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+    <ion-content>
+        <ion-list>
+            <ion-item menuClose *ngFor="let p of pendienteSrv.listas" (click)="irLista(p)">
+                {{p.nombre}} 
+                <ion-icon *ngIf="!p.completada" item-end ios="ios-square-outline" md="md-square-outline"></ion-icon>
+                <ion-icon *ngIf="p.completada" ios="ios-checkbox-outline" md="md-checkbox-outline" item-end></ion-icon>
+            </ion-item>
+            
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" [root]="rootPage" #content swipeBackEnable="false"></ion-nav>
