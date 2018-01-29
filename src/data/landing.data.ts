@@ -6,18 +6,18 @@ landingLista.componente = "LandingPage";
 landingLista.items.push(
   {
     completado: false,
-    nombre: "Flaps",
-    estado: "set",
+    nombre: "THROTTLES",
+    estado: "IDLE AT TOUCH DOWN",
   },
   {
     completado: false,
-    nombre: "landing gear ",
-    estado: "down",
+    nombre: "REVERSE",
+    estado: "on",
   },
   {
     completado: false,
-    nombre: "Speed brakes",
-    estado: "armed",
+    nombre: "AUTOBRAKE",
+    estado: "as required",
   }
 );
 

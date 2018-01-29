@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { CockpitPage } from './cockpit';
+import { SecurePage } from './secure';
 
 @NgModule({
   declarations: [
-    CockpitPage,
+    SecurePage,
   ],
   imports: [
-    IonicPageModule.forChild(CockpitPage),
+    IonicPageModule.forChild(SecurePage),
   ],
   exports: [
-    CockpitPage
+    SecurePage
   ]
 })
-export class CockpitPageModule {}
+export class SecurePageModule {}

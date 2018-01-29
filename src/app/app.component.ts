@@ -4,8 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from './../pages/home/home';
-import { Lista } from './clases/lista';
-import { PendientesService } from './services/pendientes.service';
+import { Lista } from '../clases/lista';
+import { PendientesService } from '../services/pendientes.service';
 
 @Component({
   templateUrl: 'app.html'

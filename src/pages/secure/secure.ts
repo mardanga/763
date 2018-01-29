@@ -1,19 +1,18 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-
-import { PendientesService } from './../../app/services/pendientes.service';
-import { Lista } from './../../app/clases/lista';
-import { ListaItem } from "../../app/clases/lista-item";
+import { Lista } from "../../clases/lista";
+import { PendientesService } from "../../services/pendientes.service";
+import { ListaItem } from "../../clases/lista-item";
 import { HomePage } from "../home/home";
 
 @IonicPage()
 @Component({
-  selector: 'page-takeoff',
-  templateUrl: 'takeoff.html',
+  selector: 'page-secure',
+  templateUrl: 'secure.html',
 })
-export class TakeoffPage {
+export class SecurePage {
 
+  
   private nombreLista;
   lista: Lista;
 
@@ -54,7 +53,8 @@ export class TakeoffPage {
   }
 
   irSiguienteLista(){
-    this.nav.setRoot("AftertoPage", {nombre: "AFTER TAKEOFF"});
+    this.psrv.inicializarListas(true).then(()=> this.nav.setRoot(HomePage));
   }
+
 
 }

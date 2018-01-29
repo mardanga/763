@@ -4,9 +4,9 @@ import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavParams, NavController } from 'ionic-angular';
 
 
-import { Lista } from './../../app/clases/lista';
-import { ListaItem } from './../../app/clases/lista-item';
-import { PendientesService } from './../../app/services/pendientes.service';
+import { Lista } from './../../clases/lista';
+import { ListaItem } from './../../clases/lista-item';
+import { PendientesService } from './../../services/pendientes.service';
 
 
 @IonicPage()
@@ -57,7 +57,7 @@ export class StartenginesPage {
   }
 
   irSiguienteLista(){
-    this.nav.setRoot("AftersePage", {nombre: "AFTER START ENGINES"});
+    this.nav.setRoot("BeforetoPage", {nombre: "BEFORE TAKEOFF"});
   }
 }
 

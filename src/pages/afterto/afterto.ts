@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Lista } from "../../app/clases/lista";
-import { PendientesService } from "../../app/services/pendientes.service";
-import { ListaItem } from "../../app/clases/lista-item";
+import { Lista } from "../../clases/lista";
+import { PendientesService } from "../../services/pendientes.service";
+import { ListaItem } from "../../clases/lista-item";
 import { HomePage } from "../home/home";
 
 @IonicPage()
@@ -52,7 +52,7 @@ export class AftertoPage {
   }
 
   irSiguienteLista(){
-    this.nav.setRoot("ClimbcruisePage", {nombre: "CLIMB AND CRUISE"});
+    this.nav.setRoot("ClimbcruisePage", {nombre: "CRUISE"});
   }
 
 

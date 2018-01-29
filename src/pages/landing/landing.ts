@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 
-import { PendientesService } from './../../app/services/pendientes.service';
-import { Lista } from './../../app/clases/lista';
-import { ListaItem } from "../../app/clases/lista-item";
+import { PendientesService } from './../../services/pendientes.service';
+import { Lista } from './../../clases/lista';
+import { ListaItem } from "../../clases/lista-item";
 import { HomePage } from "../home/home";
 
 @IonicPage()
@@ -55,7 +55,7 @@ export class LandingPage {
   }
 
   irSiguienteLista(){
-    this.nav.setRoot("AfterlandingPage", {nombre: "AFTER LANDING"});
+    this.nav.setRoot("ShutdownPage", {nombre: "SHUTDOWN"});
   }
 
 }

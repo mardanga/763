@@ -6,85 +6,100 @@ shutdownLista.componente = "ShutdownPage";
 shutdownLista.items.push(
   {
     completado: false,
-    nombre: "Parking Brake",
-    estado: "set",
+    nombre: "AUTO THROTTLE",
+    estado: "disarm",
     
   },
   {
     completado: false,
-    nombre: "APU or External Power",
-    estado: "Establish",
+    nombre: "SPEED BRAKE LEVER",
+    estado: "down",
   },
   {
     completado: false,
-    nombre: "Engine Anti-Ice Switches",
+    nombre: "AUTOBRAKE",
     estado: "off",
   }
 
   ,{
     completado: false,
-    nombre: "Isolation Switches (L and R)",
-    estado: "on",
+    nombre: "FLAPS",
+    estado: "up",
   },
   {
     completado: false,
-    nombre: "Fuel Control Switches",
-    estado: "cutoff",
+    nombre: "PROBE HEAT",
+    estado: "off",
   },
   {
     completado: false,
-    nombre: "Seat Belt Sign",
+    nombre: "ENGINE START SW",
     estado: "off",
   },{
     completado: false,
-    nombre: "Hydraulic Panel",
+    nombre: "LANDING/STROBE LIGHTS",
+    estado: "off",
+  },
+  {
+    completado: false,
+    nombre: "F/D",
+    estado: "off",
+  },
+  {
+    completado: false,
+    nombre: "TCAS",
+    estado: "off",
+  },
+  {
+    completado: false,
+    nombre: "PARKING BRAKES",
     estado: "set",
-    aclaracion:"Turn OFF Primary electric pumps and all demand pumps. Primary engine pumps are left ON."
-  },
-  {
-    completado: false,
-    nombre: "Red Anti-Collision lights",
-    estado: "off",
-  },
-  {
-    completado: false,
-    nombre: "IRS Mode Selectors",
-    estado: "off",
-  },
-  {
-    completado: false,
-    nombre: "Emergency Light Switch",
-    estado: "off",
   },{
     completado: false,
-    nombre: "Window Heat Switches",
+    nombre: "CUTTOFF LEVERS",
+    estado: "down",
+    
+  },
+  {
+    completado: false,
+    nombre: "ANTICOLLISION LIGHTS",
+    estado: "off",
+  },
+  {
+    completado: false,
+    nombre: "GROUND POWER",
+    estado: "on",
+  },{
+    completado: false,
+    nombre: "FUEL PUMPS",
     estado: "off",
     
   },
   {
     completado: false,
-    nombre: "Cargo Heat Switches",
+    nombre: "CAB/UTIL AND IFE/PASS",
     estado: "off",
   },
   {
     completado: false,
-    nombre: "Pack Switches",
+    nombre: "NO SMOKE/FASTEN BELTS",
     estado: "off",
-  },{
+  }
+  ,{
     completado: false,
-    nombre: "APU or External Power",
-    estado: "off , Disconect",
+    nombre: "WINDOWS HEAT",
+    estado: "off",
     
   },
   {
     completado: false,
-    nombre: "Standby Power Selector",
+    nombre: "ELEC1/ELEC2",
     estado: "off",
   },
   {
     completado: false,
-    nombre: "Battery Switch",
-    estado: "off",
+    nombre: "DOORS",
+    estado: "open",
   }
 );
 

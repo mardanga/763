@@ -10,9 +10,11 @@ import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 
-import { PendientesService } from './services/pendientes.service';
+import { PendientesService } from '../services/pendientes.service';
 
-import {PlaceHolderPipe} from '../app/pipes/placeholder.pipe';
+import {PlaceHolderPipe} from '../pipes/placeholder.pipe';
+
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,13 @@ import {PlaceHolderPipe} from '../app/pipes/placeholder.pipe';
      ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    
   ],
   providers: [
     StatusBar,

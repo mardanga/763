@@ -2,9 +2,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from "../home/home";
-import { ListaItem } from "../../app/clases/lista-item";
-import { Lista } from "../../app/clases/lista";
-import {PendientesService} from '../../app/services/pendientes.service';
+import { ListaItem } from "../../clases/lista-item";
+import { Lista } from "../../clases/lista";
+import {PendientesService} from '../../services/pendientes.service';
 
 @IonicPage()
 @Component({
